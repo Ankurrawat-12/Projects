@@ -3,9 +3,9 @@ from selenium.webdriver.common.keys import Keys
 from time import sleep
 from selenium.common.exceptions import ElementClickInterceptedException, NoSuchElementException
 
-SIMILAR_ACCOUNT = "anime_dojos"
-USERNAME = "my_a.n.i.me"
-PASSWORD = "A@nkur1234"
+SIMILAR_ACCOUNT = ""
+USERNAME = ""
+PASSWORD = ""
 chrome_driver_path = r"D:\Development\chromedriver.exe"
 
 
