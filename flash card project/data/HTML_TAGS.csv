@@ -1,0 +1,113 @@
+HTML_TAGS ,English
+<!–>,"This tag, also known as the comments tag, is used to hide comments and text from showing up on the final page. It is mostly used by coders to insert comments in various sections of the page for their reference, and make such comments not visible to end users, and in the browser."
+<!DOCTYPE>,"This is the document type tag, which is actually not a tag, but a declaration of the version of HTML that is used. It is to help the browser understand the version and type of web page, without which the browser would not be able to even recognize the webpage. The document type tag does not have an end tag."
+<a>,"The anchor tag, as this tag is called, interconnects two pages (unidirectional) with the help of a page address. The link of the interconnected page needs to be inserted as part of the href attribute, which makes the text accessible, and directs you to the said page on clicking the linked text."
+<abbr>,"This tag, usually called the abbreviation or acronym tag, is used to show the full form of an abbreviation or acronym on a mouse-over, with its title attribute."
+<acronym>,"This tag is similar to the abbreviation tag, but is used when the acronym is a spoken word, such as GUI, NASA, etc. The acronym tag is deprecated in HTML 5."
+<address>,The address tag defines the contact information of the owner or author of the page on which it is defined.
+<applet>,This tag is used to insert a Java code that works within HTML. The applet tag is not supported in HTML 5; the same functionality can be arrived at using the Object tag.
+<area>,The area tag is used to define the area of a clickable section when using area mapping.
+<article>,This tag is used to represent a component of a page that consists of a self-contained composition in a document or a page of the site.
+<aside>,"The aside tag, as the name states, separates a portion of the content from the main content of the page. In layman terms, using this tag shifts the focus from the main section of the page to highlight additional information. It can even be used to act as a sidebar aloof from the main content."
+<audio>,"The audio tag is a new addition to HTML, that allows music, or any other type of sound file, to be embedded in the webpage. Audio tags are used so that files embedded in these tags can be listened to directly in the browser rather than downloading the file to listen to it."
+<b>,"The bold tag is used, as the name suggests, to make text bold, or stand out from other text on a webpage. Similar to the bold effect found in most word processing programs."
+<base>,"The base element allows authors to specify the document base URL for the purposes of resolving relative URLs, and the name of the default browsing context for the purposes of following hyperlinks."
+<basefont>,"The basefont tag is used to define a font style, font family, and font for the entire document. It is not supported in HTML 5, where CSS is used for this and additional functionality regarding fonts."
+<bdo>,"The BDO tag, or Bi-Directional Override, is used to change the default direction of the text, which is LTR, or left to right."
+<big>,"This tag helps you define bigger text, or increase the size of the text. The big tag is not supported in HTML 5."
+<blockquote>,This tag is used to specify a section that is quoted from another source. The attribute cite needs to be used to define the source of the content.
+<body>,"The body tag displays all the content of an HTML document, such as text, hyperlinks, images, tables, lists, etc."
+<br>,"This tag lets you add a line break to the text. It puts anything that comes after it on a new line. The line break tag is an empty tag, meaning it has no end tag."
+<button>,"The button tag defines a clickable button. Inside this tag you can put content, like text or images."
+<canvas>,"The canvas tag, as the name specifies, is a blank area on the page which is used to redraw graphics on the go. Unlike the image tag, it can be modified on the fly (runtime) using scripts."
+<caption>,"The caption tag is used to insert a title for a table, different from the one in table header. This tag is inserted immediately after the table tag. The text-align and caption side properties of CSS can be used to place the caption."
+<center>,"The center tag is used to align elements or text to the center of the page. This tag is not supported in HTML 5, CSS properties need to be used instead."
+<cite>,"The cite tag defines the title of a work, e.g., a book, a song, a movie, a TV show, a painting, a sculpture, etc."
+<code>,"The code tag is used to define a reference or piece of code embedded on a page. However, using CSS might help the author enhance the piece of text more efficiently."
+<col>,"The column tag specifies styles for the cells of the table within a colgroup tag. The column tag is used to apply styles to entire columns, instead of repeating the styles for each cell, for each row."
+<colgroup>,The colgroup tag specifies styles for the columns in a table for formatting. Specifies a group of one or more columns in a table for formatting.
+<datalist>,"The datalist tag specifies a list of pre-defined options for an input element. Using autocomplete feature, it hints to the user the values in the drop down."
+<dd>,"In HTML5, the dd tag is used to describe a term/name in a description list. This tag is used in conjunction with dl (description list) and dt (defines terms)."
+<del>,The del tag defines text that has been deleted from a document. It marks changes or modifications that have occurred in the document.
+<dfn>,The dfn tag is a phrase tag. It defines a definition term.
+<div>,"The div tag defines a division or a section in an HTML document. HTML 5 segregates between the section, article, and other parts of a page, whereas in HTML 4 and before, this tag was used substantially to section and structure the page."
+<dl>,"In HTML 4.01, the dl tag defines a definition list. In HTML 5, the dl tag defines a description list."
+<dt>,The dt tag defines a term/name in a description list.
+<em>,The em tag is a phrase tag. It renders emphasized text. Similar to the italics tag.
+<embed>,"The embed tag is similar to the applet tag, which allows a third party plugin to be inserted into a page. This external plugin adds application or interactive content onto a page."
+<fieldset>,The fieldset tag is used to group related elements in a form. It draws a border box around the elements contained.
+<figcaption>,The figcaption tag defines a caption for a figure element. Similar to the caption tag for a table. It does not have any alignment property.
+<figure>,"The figure tag specifies content, like illustrations, diagrams, photos, code listings, etc. The figcaption tag is used to specify the title for the same."
+<font>,"This tag is similar to the basefont tag, except it applies the font style to the content and elements within the tag, and not across the whole page. The font tag is not supported in HTML 5, CSS is used instead."
+<footer>,"The footer tag defines a footer for a document or section. Footer naturally specifies the author and copyright information, among other things. You can have several footer elements in one document."
+<form>,The form tag is one of the most important aspects of interactive pages. It is used to create an HTML form for user input.
+<frame>,"This tag allows the author to open a new webpage within a webpage. There can be multiple frames within a page, contained in a frameset."
+<frameset>,"The frameset tag is used to contain frames (x number of webpages within a page). The frameset element specifies the columns or rows in the frameset, and the percentage/pixels of space occupied by each frame."
+<head>,"As the name states, the head tag is mainly responsible for the functioning of the body. The head tag includes all the script and style elements, and must include a title for the document"
+<header>,The header tag specifies a header for a document or section. The header element should be used as a container for introductory content or a set of navigational links.
+<h1> to <h6>,"The h1 to h6 tags are used to define HTML headings. They add highlight and font style to let the heading of the section stand out. h1 defines the most important heading, while h6 defines the least important."
+<hr>,"The hr tag defines a thematic break in an HTML page (e.g., a shift of topic)."
+<html>,The HTML tag tells the browser that this is an HTML document. This tag is the container for all other HTML elements (except for the <!DOCTYPE> tag).
+<i>,The italic tag is used to highlight important words or sentences within text. Similar to the Italic text found in most word processing programs.
+<iframe>,The iframe tag helps you to insert a frame in any HTML document. It does not require a framset container.
+<img>,"This tag defines images in an HTML document. A source and an alt are mandatory attributes of this tag. Technically, they are not inserted, they are the source of the image linked to the tag."
+<input>,"As the name suggests, an author can accept inputs from users making a page interactive, using this tag. It is used within the form tag."
+<ins>,The ins tag defines text that has been inserted into a document. It marks changes or modifications that have occurred in the document.
+<kbd>,This tag defines keyboard input. The font style in this tag is different than normal text.
+<label>,"The label element does not render anything special for the user. However, it provides a usability improvement for mouse users, because if the user clicks on the text within the label element, the cursor focus is shifted to the relative input element. For this functionality the “for” attribute is used on label."
+<legend>,The legend tag defines a caption for the fieldset element. It is similar to the caption tag for a table. It does not have any alignment properties.
+<li>,"The li tag defines a list item, and is used in ordered lists (ol), unordered lists (ul), and in menu lists (menu)."
+<link>,"As the name states, this tag creates a link with an external source. It can be a file of any format."
+<main>,"The main tag, as the name states, highlights the most important content of the document. This content cannot be repeated anywhere throughout the document. It is designed to show screenreaders and assistive technologies exactly where the main content begins. It could also be used for content syndication, where mobile browsers could zoom in when encountering non-responsive websites."
+<map>,"The map tag is used to define a client-side image-map, wherein an author can make a part of image clickable."
+<mark>,This tag lets you highlight the text in a document.
+<meta>,"The meta tag provides metadata about the HTML document. Metadata will not be displayed on the page, but will be machine parsable."
+<meter>,"The meter tag defines a scalar measurement within a known range, or a fractional value. This is also known as a gauge."
+<nav>,The nav tag defines the navigation links of the page.
+<noscript>,The noscript tag defines an alternate content for users that have disabled scripts in their browser or have a browser that does not support script. The noscript contained content/element will be displayed if scripts are not supported.
+<object>,"The object tag adds external elements to pages, just by linking the source. External elements can be animated flash, webpages, applets, PDFs, etc. It is placed within the body tag only."
+<ol>,Ordered list; lets you have a list of elements with a numbered or alphabetical bulleted list.
+<optgroup>,"The optgroup tag helps you create sections or groups within a drop down list. Comes within select tag only, and contains only option as a child."
+<option>,"This tag creates the items for selection in the drop down list, i.e., options to be selected from the select tag."
+<p>,The p tag defines a paragraph on the page.
+<param>,The param tag is used to define parameters for plugins embedded with an object element.
+<pre>,"This tag lets you used preformatted text, where the user can define or print text on page ‘as is’ written inside the tag. It preserves line breaks and spaces, hence the br tag is not required."
+<progress>,The progress tag represents the progress of a task.
+<q>,The q tag defines a short quotation. Browsers normally insert quotation marks around the quotation.
+<s>,The s tag defines the encompassed text is not more accurate or correct. Should not be used to define replaced or deleted text.
+<samp>,The samp tag is a phrase tag. It defines sample output from a computer program.
+<script>,"The script tag enables the author to insert scripting language into document, such as JavaScript. This tag lets you validate, manipulate, and affect content dynamically."
+<section>,"The section tag defines a section of the page, such as chapters, headers, footers, etc."
+<select>,"The select tag lets the author define a drop down of options to select from, which are hardcoded in HTML. A list of items are inserted using the option tag within the select tag."
+<small>,This tag reduces size of the text from the normal size to a smaller size.
+<source>,"The source tag is nested within the audio and video tag, letting it define the source of the media to be used by the browser, based on its media type or codec support."
+<span>,The span tag is mainly used to add custom styling to inline elements. There are no self-properties defined for this tag.
+<strike>,"Using this tag draws a line through the text, similar to the strike through function found in most word processing programs. Not supported in HTML 5, the del tag is used for this functionality in HTML 5."
+<strong>,The strong tag is a phrase tag. It defines important text.
+<style>,The style tag is used to define styling for the page and elements on the page.
+<sub>,"The subscript tag is used to define or format text, by shifting the text to the lower part of the current line, called the baseline. This tag is usually used when expressing scientific formulae."
+<sup>,"The superscript tag is used to define say format a text by shifting it to the upper part of the current line, called the baseline. This tag is usually used in mathematics or citations."
+<table>,"The table tag is used to present data in a tabular format. The tr tag is used to insert rows, while the td tag is used to insert columns. The th tag is used to define the table header. More complex tables may also include the caption tag, the column tag, the colgroup tag, the table header tag, the table footer tag, and the table body tag."
+<tbody>,"The tbody tag, or the table body tag, is used to group the body content in an HTML table. Can be excluded while coding. Thead (table header) and tfoot (table footer) are used in collaboration with the tbody tag, making the table a complete skeleton. When printing a large table that spans multiple pages, these elements can enable the table header and footer to be printed at the top and bottom of each page."
+<td>,"The td tag is an individual cell in table, it helps form the columns of the table. An HTML table has two kinds of cells:
+
+
+Header cells that contain header information (created with the th element)
+Standard cells that contain data (created with the td element)"
+<textarea>,"The textarea tag defines multi-line text input control. The size of a textarea can be specified by the columns and rows attribute, or using CSS."
+<tfoot>,The tfooter tag is used to group the footer content in an HTML table. The thead and tbody tags are used in collaboration with tfoot.
+<th>,"The th tag defines a header cell in an HTML table. An HTML table has two kinds of cells:
+Header cells that contain header information (created with the th element)
+Standard cells that contain data (created with the td element)"
+<thead>,The thead tag is used to group the header content in an HTML table. The tbody and tfoot tags are used in collaboration with the thead tag.
+<time>,"The time tag defines either a time (24-hour clock), or a date in the Gregorian calendar, optionally with a time and a time-zone offset. This element can be used as a way to encode dates and times in a machine-readable way, so that, for example, user agents can offer to add birthday reminders or scheduled events to the user’s calendar, and search engines can produce smarter search results."
+<title>,"As the name states, the title tag defines the title of the page. This tag is placed inside the header tag, and the title element:
+defines a title in the browser’s toolbar
+provides a title for the page when it is added to favorites
+displays a title for the page in search-engine results"
+<tr>,"The tr tag defines a row in an HTML table. It contains the td or th tags, which define the visual columns of the table. Both are interdependent, without each other table would not display as expected."
+<u>,"The u tag is used to underline words, similar to the underline function found in most word processing software. Deprecated in HTML 4.01, the underline tag was reintroduced in HTML 5 to represent text that should be stylistically different from normal text, such as misspelled words or proper nouns in Chinese. It is recommended to avoid using the underline tag, as text styles with this tag can be mistaken for hyperlinks."
+<ul>,Unordered list; lets you have a list of elements without numbers or alphabetical bulleted list. It shows black strong dots (•) as bullets. List items are placed within the li tag.
+<var>,The var tag is a phrase tag. It defines a variable. Similar to the italics tag.
+<video>,"As the name states, it is a media tag, that defines video in the page, replacing the object and embed tag. Simple to use, source tag within defines the media source url."
+<wbr>,The <wbr> (Word Break Opportunity) tag specifies where in a text it would be okay to add a line break. Using this tag prevents the browser from breaking a lengthy word in an abrupt manner.
