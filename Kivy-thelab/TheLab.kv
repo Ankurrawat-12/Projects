@@ -1,0 +1,299 @@
+# main interface
+PageLayoutExample:
+
+<CanvasExample7>:
+    orientation: "vertical"
+    RelativeLayout:
+        canvas:
+            Color:
+                rgb: 1, 0.5, 0
+            Rectangle:
+                size: self.size
+    RelativeLayout:
+        canvas:
+            Color:
+                rgb: 1, 1, 1
+            Rectangle:
+                size: self.size
+            Color:
+                rgb: 0, 0, 1
+            Line:
+                circle:( self.center_x, self.center_y, self.height / 2) # center_x, center_y, radius
+                width: 2
+
+
+
+
+    RelativeLayout:
+        canvas:
+            Color:
+                rgb: 0, 0.5, 0
+            Rectangle:
+                size: self.size
+
+
+<CanvasExample6>:
+    BoxLayout:
+        size: root.size
+        Widget:
+            canvas:
+                Color:
+                    rgb: 0, 1, 0
+                Rectangle:
+                    size: self.size
+        RelativeLayout:
+            canvas:
+                Color:
+                    rgb: 0, 0, 1
+                Rectangle:
+                    size: self.size
+
+<CanvasExample5>:
+
+
+#:set s dp(150)
+<CanvasExample1>:
+    canvas:
+        Rectangle:
+            pos: self.center_x - s/2, self.center_y - s/2
+            #pos: dp(100), dp(100)
+            size: s, s
+        Ellipse:
+            pos: 200, 500
+            size: s, s/2
+        Line:
+            points: (0, 0, self.width/4, 100, self.width/2, 0, self.width*3/4, 100, self.width, 0)
+            width: 2
+
+
+<CanvasExample2>:
+    canvas:
+        Line:
+            points: (0, self.height/2, self.width, self.height/2)
+            width: 2
+        Line:
+            points: (self.width/2, 0, self.width/2, self.height)
+            width: 2
+
+
+<CanvasExample3>:
+    canvas:
+        Color:
+            rgba: 1, 0, 0, .7
+        Line:
+            circle:( 200, 200, 100) # center_x, center_y, radius
+            width: 2
+        Color:
+            rgb: 0, 1, 0
+        Line:
+            ellipse: ( 500, 300, 100, 200) # center_x, center_y, radius_x, radius_y
+            width: 2
+        Color:
+            rgb: 0, 0, 1, .5
+        Line:
+            rectangle: ( 100, 400, 200, 100) # center_x, center_y, width, height
+            width: 2
+
+<CanvasExample4>:
+    Button:
+        pos: 100, 400
+        text: "A"
+        on_press: root.on_button_a_clicked()
+<ImagesExample@GridLayout>
+    cols: 3
+    Image:
+        source: "RESOURCES/images/cake.jpg"
+    Image:
+        source: "RESOURCES/images/cake.jpg"
+        allow_stretch: True
+    Image:
+        source: "RESOURCES/images/cake.jpg"
+        keep_ratio: False
+        allow_stretch: True
+
+
+<WidgetsExamples>:
+    cols: 3
+    ToggleButton:
+        text: "OFF"
+        on_state: root.on_toggle_button_state(self)
+        size_hint: None, 1
+        width: "100dp"
+    Button:
+        text: "Click here"
+        on_press: root.on_button_click()
+        disabled: not root.on
+    Label:
+        text: root.my_text
+        font_name: "RESOURCES/fonts/Lcd.ttf"
+        font_size: "80dp"
+        color: 1, .5, 1, 1
+    Switch:
+        id: my_switch
+        active: True
+        size_hint: None, 1
+        width: "100dp"
+        on_active: root.on_switch_active(self)
+    Slider:
+        id: my_slider
+        disabled: not my_switch.active
+        orientation: "vertical"
+        min: 0
+        max: 100
+        #on_value: root.on_slider_value(self)
+        #value: 50
+    BoxLayout:
+        orientation: "vertical"
+        Label:
+            text: str(my_slider.value)
+            font_name: "RESOURCES/fonts/Lcd.ttf"
+            font_size: "40dp"
+            color: 1, .5, 1, 1
+        ProgressBar:
+            max: 100
+            value: my_slider.value
+    TextInput:
+        id: my_text_input
+        size_hint: None, 1
+        width: "100dp"
+        text: "Ankur"
+        multiline: False
+        on_text_validate: root.on_text_validate(self)
+    Label:
+        text: "your name is :- "+ root.text_input_str
+        font_size: "20dp"
+        color: 1, .5, 1, 1
+
+
+
+<PageLayoutExample@PageLayout>:
+    MainWidget:
+    AnchorLayoutExample:
+    GridLayoutExample:
+    StackLayoutExample:
+    ScrollViewExample:
+
+
+<ScrollViewExample@ScrollView>:
+    StackLayoutExample:
+        size_hint: 1, None
+        height: self.minimum_height
+
+
+<StackLayoutExample>:
+    # left-right top-bottom
+    # orientation: "rl-tb"
+    # padding:("20dp", "20dp", "20dp", "20dp")
+    # spacing: "20dp", "20dp"
+
+<GridLayoutExample@GridLayout>:
+    # rows
+    # cols
+    cols: 3
+    rows: 2
+    Button:
+        text: "A"
+        size_hint: None, 1
+        width: "60dp"
+    BoxLayoutExample
+    Button:
+        text: "C"
+    Button:
+        text: "D"
+        #size_hint: .5, 1
+        size_hint: None, 1
+        width: "60dp"
+    Button:
+        text: "E"
+    AnchorLayoutExample
+
+<AnchorLayoutExample>:
+    # right, left, center
+    anchor_x: "left"
+    # bottom, top, center
+    anchor_y: "top"
+    BoxLayout
+        orientation: "vertical"
+        spacing: .2
+        # spacing: "10dp"
+        size_hint: 1, 1
+        Button:
+            text: "A"
+        Button:
+            text: "B"
+        Button:
+            text: "C"
+        Button:
+            text: "D"
+        Button:
+            text: "E"
+        Button:
+            text: "F"
+        Button:
+            text: "G"
+        Button:
+            text: "H"
+        Button:
+            text: "I"
+        Button:
+            text: "J"
+        BoxLayout:
+            Button:
+                text: "K"
+            Button:
+                text: "L"
+            Button:
+                text: "M"
+            Button:
+                text: "N"
+            Button:
+                text: "O"
+            Button:
+                text: "P"
+
+<BoxLayoutExample>:
+    orientation: "horizontal"
+    spacing: "10dp"
+    Button:
+        text: "A"
+        size_hint: .5, .5
+        # size: "100dp", "80dp"
+        # width: "100dp"
+        # height: "60dp"
+        # x, center_x, right
+        # y, center_y, top
+        # pos_hint: {"center_x": .5}
+        pos_hint: {"center_y": .5}
+    BoxLayout:
+        orientation: "vertical"
+        spacing: "10dp"
+        Button:
+            text: "B1"
+        Button:
+            text: "B2"
+        Button:
+            text: "B3"
+        BoxLayout:
+            orientation: "horizontal"
+            spacing: "5dp"
+            Button:
+                text: "B41"
+            Button:
+                text: "B42"
+        Button:
+            text: "B5"
+    Label:
+        text: "C"
+
+
+<MainWidget>:
+    Button:
+        text: "Hello"
+        size: "100dp", "80dp"
+        pos: "100dp", "200dp"
+        color: 0, 0, 1, 1
+    Label:
+        text: "Hello2"
+        size: "100dp", "80dp"
+        pos: "200dp", "300dp"
+        color: 1, 0, 0, 1
