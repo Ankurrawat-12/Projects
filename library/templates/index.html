@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Library</title>
+</head>
+<body>
+<h1>My Library</h1>
+        {% if animes == []: %}
+        <p>Library is empty.</p>
+        {% endif %}
+    <ol>
+        {% for anime in animes %}
+        <li>
+            {{anime.title}} - {{anime.favourite_C}} - {{anime.rating}}/10
+            <a href="{{ url_for('edit_fc', id=anime.id) }}">Edit FC</a>,
+            <a href="{{ url_for('edit', id=anime.id) }}">Edit Rating</a>,
+            <a href="{{ url_for('delete', id=anime.id) }}">Delete</a>
+        </li>
+        {% endfor %}
+    </ol>
+<a href="{{ url_for('add') }}">Add New Anime</a>
+</body>
+</html>

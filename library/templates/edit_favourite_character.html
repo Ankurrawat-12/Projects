@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Edit Favourite Character</title>
+</head>
+<body>
+     <form action="{{ url_for('edit_fc') }}" method="POST">
+        <p>Anime Name: {{anime.title}}</p>
+        <p>Current Favourite Character: {{anime.favourite_C}}</p>
+         <input hidden="hidden" name="id" value="{{anime.id}}">
+        <input name="favourite_C" type="text" placeholder="New Favourite Character">
+        <button type="submit">Change Favourite Character</button>
+    </form>
+</body>
+</html>
