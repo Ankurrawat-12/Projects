@@ -1,0 +1,22 @@
+# Sets In Python
+s = set()
+s.add(1)
+s.add(2)
+# print(type(s))
+# l = [1, 2, 3, 4]
+# s_from_list = set(l)
+# print(s_from_list)
+# print(type(s_from_list))
+# s1 = s.union({1, 2, 3})
+# print(s, s1)
+# print(len(s), len(s1))
+# s1 = s.intersection({1, 2, 3})
+# print(s, s1)
+# print(len(s), len(s1))
+# print(min(s), min(s1))
+# print(max(s), max(s1))
+s1 = {4, 6}
+print(s)
+s.remove(2)
+print(s)
+print(s.isdisjoint(s1))

@@ -1,0 +1,26 @@
+# String Slicing And Other Functions In Python
+my_string = "ankur is a good boy"
+# print(my_string[0:5])
+# print(my_string[0:79])
+# print(my_string[:5])
+# print(my_string[0:])
+# print(my_string[:])
+# print(my_string[::])
+# print(my_string[0:79:2])
+# print(len(my_string))
+#
+# print(my_string[-4:-2])
+# print(my_string[15:17])
+# print(my_string[::-1])
+# print(my_string[::-2])
+
+print(my_string.isalnum())
+print(my_string.isalpha())
+print(my_string.endswith("boy"))
+print(my_string.endswith("ankur"))
+print(my_string.count("o"))
+print(my_string.capitalize())
+print(my_string.find("is"))
+print(my_string.lower())
+print(my_string.upper())
+print(my_string.replace("ankur", "Ajay"))

@@ -1,0 +1,103 @@
+PS C:\Users\ankur\PycharmProjects\Pythontuts\tut43> pip install virtualenv
+Requirement already satisfied: virtualenv in c:\python39\lib\site-packages (20.4.6)
+Requirement already satisfied: six<2,>=1.9.0 in c:\python39\lib\site-packages (from virtualenv) (1.16.0)
+Requirement already satisfied: appdirs<2,>=1.4.3 in c:\python39\lib\site-packages (from virtualenv) (1.4.4)
+Requirement already satisfied: filelock<4,>=3.0.0 in c:\python39\lib\site-packages (from virtualenv) (3.0.12)
+Requirement already satisfied: distlib<1,>=0.3.1 in c:\python39\lib\site-packages (from virtualenv) (0.3.1)
+PS C:\Users\ankur\PycharmProjects\Pythontuts\tut43> virtualenv
+usage: virtualenv [--version] [--with-traceback] [-v | -q] [--read-only-app-data] [--app-data APP_DATA] [--reset-app-data] [--upgrade-embed-wheels] [--discovery {builtin}] [-p py] [--try-first-with py_exe]
+                  [--creator {builtin,cpython3-win,venv}] [--seeder {app-data,pip}] [--no-seed] [--activators comma_sep_list] [--clear] [--no-vcs-ignore] [--system-site-packages] [--copies] [--no-download | --download]
+                  [--extra-search-dir d [d ...]] [--pip version] [--setuptools version] [--wheel version] [--no-pip] [--no-setuptools] [--no-wheel] [--no-periodic-update] [--symlink-app-data] [--prompt prompt] [-h]
+                  dest
+virtualenv: error: the following arguments are required: dest
+SystemExit: 2
+PS C:\Users\ankur\PycharmProjects\Pythontuts\tut43> virtualenv ank
+created virtual environment CPython3.9.4.final.0-64 in 7669ms
+  creator CPython3Windows(dest=C:\Users\ankur\PycharmProjects\Pythontuts\tut43\ank, clear=False, no_vcs_ignore=False, global=False)
+  seeder FromAppData(download=False, pip=bundle, setuptools=bundle, wheel=bundle, via=copy, app_data_dir=C:\Users\ankur\AppData\Local\pypa\virtualenv)
+    added seed packages: pip==21.1.1, setuptools==56.0.0, wheel==0.36.2
+  activators BashActivator,BatchActivator,FishActivator,PowerShellActivator,PythonActivator,XonshActivator
+PS C:\Users\ankur\PycharmProjects\Pythontuts\tut43> .\ank\Scripts\activate
+.\ank\Scripts\activate : File C:\Users\ankur\PycharmProjects\Pythontuts\tut43\ank\Scripts\activate.ps1 cannot be loaded because
+running scripts is disabled on this system. For more information, see about_Execution_Policies at
+https:/go.microsoft.com/fwlink/?LinkID=135170.
+At line:1 char:1
++ .\ank\Scripts\activate
++ ~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : SecurityError: (:) [], PSSecurityException
+    + FullyQualifiedErrorId : UnauthorizedAccess
+PS C:\Users\ankur\PycharmProjects\Pythontuts\tut43> .\ank\Scripts\activate
+(ank) PS C:\Users\ankur\PycharmProjects\Pythontuts\tut43> python
+Python 3.9.4 (tags/v3.9.4:1f2e308, Apr  6 2021, 13:40:21) [MSC v.1928 64 bit (AMD64)] on win32
+Type "help", "copyright", "credits" or "license" for more information.
+>>> import pandas
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+ModuleNotFoundError: No module named 'pandas'
+>>> exit()
+(ank) PS C:\Users\ankur\PycharmProjects\Pythontuts\tut43> deactivate
+PS C:\Users\ankur\PycharmProjects\Pythontuts\tut43> python
+Python 3.9.4 (tags/v3.9.4:1f2e308, Apr  6 2021, 13:40:21) [MSC v.1928 64 bit (AMD64)] on win32
+Type "help", "copyright", "credits" or "license" for more information.
+>>> import pandas
+>>> exit()
+PS C:\Users\ankur\PycharmProjects\Pythontuts\tut43> .\ank\Scripts\activate
+(ank) PS C:\Users\ankur\PycharmProjects\Pythontuts\tut43> python
+Python 3.9.4 (tags/v3.9.4:1f2e308, Apr  6 2021, 13:40:21) [MSC v.1928 64 bit (AMD64)] on win32
+Type "help", "copyright", "credits" or "license" for more information.
+>>> exit()
+(ank) PS C:\Users\ankur\PycharmProjects\Pythontuts\tut43> pip install sklearn
+Collecting sklearn
+  Using cached sklearn-0.0.tar.gz (1.1 kB)
+Collecting scikit-learn
+  Using cached scikit_learn-0.24.2-cp39-cp39-win_amd64.whl (6.9 MB)
+Collecting joblib>=0.11
+  Using cached joblib-1.0.1-py3-none-any.whl (303 kB)
+Collecting threadpoolctl>=2.0.0
+  Using cached threadpoolctl-2.1.0-py3-none-any.whl (12 kB)
+Collecting numpy>=1.13.3
+  Using cached numpy-1.20.3-cp39-cp39-win_amd64.whl (13.7 MB)
+Collecting scipy>=0.19.1
+  Using cached scipy-1.6.3-cp39-cp39-win_amd64.whl (32.7 MB)
+Building wheels for collected packages: sklearn
+  Building wheel for sklearn (setup.py) ... done
+  Created wheel for sklearn: filename=sklearn-0.0-py2.py3-none-any.whl size=1316 sha256=a461285ccc78cf980c31eebaa90e9d5795684d3d0f6ea468aabfb794da9dc16e
+  Stored in directory: c:\users\ankur\appdata\local\pip\cache\wheels\e4\7b\98\b6466d71b8d738a0c547008b9eb39bf8676d1ff6ca4b22af1c
+Successfully built sklearn
+Installing collected packages: numpy, threadpoolctl, scipy, joblib, scikit-learn, sklearn
+Successfully installed joblib-1.0.1 numpy-1.20.3 scikit-learn-0.24.2 scipy-1.6.3 sklearn-0.0 threadpoolctl-2.1.0
+(ank) PS C:\Users\ankur\PycharmProjects\Pythontuts\tut43> python
+Python 3.9.4 (tags/v3.9.4:1f2e308, Apr  6 2021, 13:40:21) [MSC v.1928 64 bit (AMD64)] on win32
+Type "help", "copyright", "credits" or "license" for more information.
+>>> import sklearn
+>>> exit()
+(ank) PS C:\Users\ankur\PycharmProjects\Pythontuts\tut43> pip frezz > requirnments.txt
+ERROR: unknown command "frezz" - maybe you meant "freeze"
+(ank) PS C:\Users\ankur\PycharmProjects\Pythontuts\tut43> pip freeze > requirnments.txt
+(ank) PS C:\Users\ankur\PycharmProjects\Pythontuts\tut43> pip install numpy==1.20.3
+Requirement already satisfied: numpy==1.20.3 in c:\users\ankur\pycharmprojects\pythontuts\tut43\ank\lib\site-packages (1.20.3)
+(ank) PS C:\Users\ankur\PycharmProjects\Pythontuts\tut43> pip install -r .\requirnments.txt
+Requirement already satisfied: joblib==1.0.1 in c:\users\ankur\pycharmprojects\pythontuts\tut43\ank\lib\site-packages (from -r .\requirnments.txt (line 1)) (1.0.1)
+Requirement already satisfied: numpy==1.20.3 in c:\users\ankur\pycharmprojects\pythontuts\tut43\ank\lib\site-packages (from -r .\requirnments.txt (line 2)) (1.20.3)
+Requirement already satisfied: scikit-learn==0.24.2 in c:\users\ankur\pycharmprojects\pythontuts\tut43\ank\lib\site-packages (from -r .\requirnments.txt (line 3)) (0.24.2)
+Requirement already satisfied: scipy==1.6.3 in c:\users\ankur\pycharmprojects\pythontuts\tut43\ank\lib\site-packages (from -r .\requirnments.txt (line 4)) (1.6.3)
+Requirement already satisfied: sklearn==0.0 in c:\users\ankur\pycharmprojects\pythontuts\tut43\ank\lib\site-packages (from -r .\requirnments.txt (line 5)) (0.0)
+Requirement already satisfied: threadpoolctl==2.1.0 in c:\users\ankur\pycharmprojects\pythontuts\tut43\ank\lib\site-packages (from -r .\requirnments.txt (line 6)) (2.1.0)
+(ank) PS C:\Users\ankur\PycharmProjects\Pythontuts\tut43> deactivate
+PS C:\Users\ankur\PycharmProjects\Pythontuts\tut43> virtualenv --system-site-packages ank2
+created virtual environment CPython3.9.4.final.0-64 in 1194ms
+  creator CPython3Windows(dest=C:\Users\ankur\PycharmProjects\Pythontuts\tut43\ank2, clear=False, no_vcs_ignore=False, global=True)
+  seeder FromAppData(download=False, pip=bundle, setuptools=bundle, wheel=bundle, via=copy, app_data_dir=C:\Users\ankur\AppData\Local\pypa\virtualenv)
+    added seed packages: pip==21.1.1, setuptools==56.0.0, wheel==0.36.2
+  activators BashActivator,BatchActivator,FishActivator,PowerShellActivator,PythonActivator,XonshActivator
+PS C:\Users\ankur\PycharmProjects\Pythontuts\tut43> .\ank2\Scripts\activate
+(ank2) PS C:\Users\ankur\PycharmProjects\Pythontuts\tut43> pip frezz > requirnments2.txt
+ERROR: unknown command "frezz" - maybe you meant "freeze"
+(ank2) PS C:\Users\ankur\PycharmProjects\Pythontuts\tut43> pip freeze > requirnments2.txt
+(ank2) PS C:\Users\ankur\PycharmProjects\Pythontuts\tut43> python
+Python 3.9.4 (tags/v3.9.4:1f2e308, Apr  6 2021, 13:40:21) [MSC v.1928 64 bit (AMD64)] on win32
+Type "help", "copyright", "credits" or "license" for more information.
+>>> import flask
+>>> exit()
+(ank2) PS C:\Users\ankur\PycharmProjects\Pythontuts\tut43> deactivate
+PS C:\Users\ankur\PycharmProjects\Pythontuts\tut43>
